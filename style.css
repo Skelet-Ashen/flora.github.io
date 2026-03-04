@@ -1,7 +1,72 @@
+/*color palette
+FFAAAA
+AA3939
+550000
+*/
+
+
 body {
-    background-color: #3f3f3f;
-    font-family: "Roboto Condensed", sans-serif;
+    /*background*/
+    background-image: url("img/background.png");
+    background-repeat: repeat;
+
+
+    /*font*/
+    font-family: "Lato", sans-serif;
     font-weight: bold;
-    color: #d8d8d8;
+    color: #FFAAAA;
     font-size: 20px;
+
+    /*overflow*/
+    overflow-x: hidden;
+
+    /*margin*/
+    margin: 0%;
+    padding: 0%;
+    padding-top: 200px;
+}
+
+.poestry {
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.container {
+    display: grid;
+    grid-template-rows:
+        50% 50%;
+    grid-template-columns: 50% 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.container div {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    /*position*/
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 180px;
+    top: 0;
+
+    /*margin*/
+    margin-top: 0%;
+    padding-top: 0%;
+
+    /*font*/
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    color: #FFAAAA;
+    font-size: 175%;
+
+    /*background*/
+    background-color: rgba(170, 57, 57, 0.7);
+    backdrop-filter: blur(5px);
 }
